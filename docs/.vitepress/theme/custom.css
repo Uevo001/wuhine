@@ -1,0 +1,60 @@
+:root {
+  --vp-c-brand-1: #4f46e5;
+  --vp-c-brand-2: #4338ca;
+  --vp-c-brand-3: #6366f1;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #4f46e5, #06b6d4);
+}
+
+.VPHomeHero .image-bg {
+  background-image: linear-gradient(135deg, rgba(79, 70, 229, 0.35), rgba(6, 182, 212, 0.25));
+  filter: blur(72px);
+}
+
+.glass-card {
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 82%, transparent);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin: 0.8rem 0;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(2, 8, 20, 0.2);
+}
+
+.kpi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.kpi .item {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.kpi .num {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
